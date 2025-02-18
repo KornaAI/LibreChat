@@ -620,6 +620,7 @@ export const alternateName = {
   [EModelEndpoint.custom]: 'Custom',
   [EModelEndpoint.bedrock]: 'AWS Bedrock',
   [KnownEndpoints.ollama]: 'Ollama',
+  [KnownEndpoints.deepseek]: 'DeepSeek',
   [KnownEndpoints.xai]: 'xAI',
 };
 
@@ -1208,7 +1209,9 @@ export enum ForkOptions {
   /** Key for including branches */
   INCLUDE_BRANCHES = 'includeBranches',
   /** Key for target level fork (default) */
-  TARGET_LEVEL = '',
+  TARGET_LEVEL = 'targetLevel',
+  /** Default option */
+  DEFAULT = 'default',
 }
 
 /**
